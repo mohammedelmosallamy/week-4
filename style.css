@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2% 0;
+    background-color: #e3e6f3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+ nav ul{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 1% 0;
+}
+nav ul a{
+    text-decoration: none;
+    color: #2e2e2e;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+nav ul a:hover , nav ul a.active{
+    color: #0bc7ba;
+}
+/* ==================================== start header ================================ */
+header{
+    background-image: url(img/hero4.png);
+    height: 100vh;
+    background-size: 100% 100%;
+    position: relative;
+}
+header .cap{
+    position: absolute;
+    top:30%;
+    left: 10%;
+    line-height: 50px;
+}
+header .cap h1{
+    color: #0bc7ba;
+    font-size: 50px;
+}
+header .cap h2{
+    font-size: 40px;
+}
+header .cap h4{
+    font-size: 20px;
+}
+header .cap p{
+   color: gray;
+}
+.header-button{
+    background-image: url(img/button.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    color: #0bc7ba;
+    border: none;
+    padding: 5% 15%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+/* ==================================== features ================================ */
+.features{
+    display: flex;
+    justify-content: space-evenly;
+}
+.features .feat{
+    text-align: center;
+    border: 1px solid #98efe9;
+    width: 14%;
+    border-radius: 3px;
+    padding: 2% ;
+    height: 30vh;
+    margin: 2% 0;
+    box-shadow: 0 4px 8px 0 rgba(73, 73, 73, 0.2);
+ 
+}
+.features .feat:hover{
+    box-shadow: 0 4px 8px 0 rgba(4, 4, 4, 0.2);
+
+}
+.features .feat p{
+    padding: 5% 0;
+    color: #0bc7ba;
+    background-color: rgb(240, 222, 238);
+    border: 1px solid rgb(248, 214, 244); 
+    border-radius: 4px;
+}
+.featured-products .h1{
+    text-align: center;
+    padding-top: 5%;
+}
+.featured-products .p{
+    text-align: center;
+    padding-bottom: 5%;
+}
+/* new colleection */
+.new-collection{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 8%;
+}
+.new-collection .new-coll{
+    text-align: center;
+    border: 1px solid #98efe9;
+    width: 23%;
+    border-radius: 20px;
+    padding: 2% ;
+    height: 65vh;
+    margin: 2% 0;
+    box-shadow: 0 4px 8px 0 rgba(73, 73, 73, 0.2);
+ 
+}
+.new-collection .new-coll:hover{
+    box-shadow: 0 4px 8px 0 rgba(4, 4, 4, 0.2);
+
+}
+.new-collection .new-coll .adidas{
+    text-align: left;
+    color: gray;
+    padding-bottom: 5%;
+}
+.new-collection .new-coll .new-coll1{
+    width: 100%;
+    height: 40vh;
+    border-radius: 20px;
+}
+/* new collection 2 */
+.new-collection-2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.new-collection-2 .new-coll{
+    text-align: center;
+    border: 1px solid #98efe9;
+    width: 23%;
+    border-radius: 20px;
+    padding: 2% ;
+    height: 65vh;
+    margin: 2% 0;
+    box-shadow: 0 4px 8px 0 rgba(73, 73, 73, 0.2);
+ 
+}
+.new-collection-2 .new-coll:hover{
+    box-shadow: 0 4px 8px 0 rgba(4, 4, 4, 0.2);
+
+}
+.new-collection-2 .new-coll .adidas{
+    text-align: left;
+    color: gray;
+    padding-bottom: 5%;
+}
+.new-collection-2 .new-coll .p2{
+    padding: 5% 0;
+}
+.new-collection-2 .new-coll .new-coll1{
+    width: 100%;
+    height: 40vh;
+    border-radius: 20px;
+}
+/* rating star */
+.new-collection .new-coll #rating{
+    color: gold;
+}
+.new-collection-2 .new-coll #rating{
+    color: gold;
+}
+/* price */
+.new-collection .new-coll .price{
+    color: #0bc7ba;
+    text-align: left;
+}
+.new-collection-2 .new-coll .price{
+    color: #0bc7ba;
+    text-align: left;
+}
+/* shopping cart */
+.new-collection .new-coll #shopping-cart{
+    color: #0bc7ba;
+}
+.new-collection-2 .new-coll #shopping-cart{
+    color: #0bc7ba;
+}
+/* banner */
+.banner{
+    display: flex;
+    position: relative;
+}
+.banner-sec .banner{
+    /* z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.banner-sec .banner-text{
+    text-align: center;
+}
+.banner-sec .banner-text .red{
+    color: red;
+}
+.banner-sec .header-button{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    color: #0bc7ba;
+    border: none;
+    padding: 5% 15%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1%;
+}
+/* new arrivel */
+.new-arriv{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 8%;
+}
+.new-arriv .new-arrivel{
+    text-align: center;
+    border: 1px solid #98efe9;
+    width: 23%;
+    border-radius: 20px;
+    padding: 2% ;
+    height: 65vh;
+    margin: 2% 0;
+    box-shadow: 0 4px 8px 0 rgba(73, 73, 73, 0.2);
+ 
+}
+.new-arriv .new-arrivel:hover{
+    box-shadow: 0 4px 8px 0 rgba(4, 4, 4, 0.2);
+
+}
+.new-arriv .new-arrivel .adidas{
+    text-align: left;
+    color: gray;
+    padding-bottom: 5%;
+}
+.new-arriv .new-arrivel .new-arrivel1{
+    width: 100%;
+    height: 40vh;
+    border-radius: 20px;
+}
+/* new collection 2 */
+.new-arriv-2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.new-arriv-2 .new-arrivel{
+    text-align: center;
+    border: 1px solid #98efe9;
+    width: 23%;
+    border-radius: 20px;
+    padding: 2% ;
+    height: 65vh;
+    margin: 2% 0;
+    box-shadow: 0 4px 8px 0 rgba(73, 73, 73, 0.2);
+ 
+}
+.new-arriv-2 .new-arrivel:hover{
+    box-shadow: 0 4px 8px 0 rgba(4, 4, 4, 0.2);
+
+}
+.new-arriv-2 .new-arrivel .adidas{
+    text-align: left;
+    color: gray;
+    padding-bottom: 5%;
+}
+.new-arriv-2 .new-arrivel .p2{
+    text-align: left;
+}
+.new-arriv-2 .new-arrivel .new-arrivel1{
+    width: 100%;
+    height: 40vh;
+    border-radius: 20px;
+}
+/* rating star */
+.new-arriv .new-arrivel #rating{
+    color: gold;
+}
+.new-arriv-2 .new-arrivel #rating{
+    color: gold;
+}
+/* price */
+.new-arriv .new-arrivel .price{
+    color: #0bc7ba;
+    text-align: left;
+}
+.new-arriv-2 .new-arrivel .price{
+    color: #0bc7ba;
+    text-align: left;
+}
+/* shopping cart */
+.new-arriv .new-arrivel #shopping-cart{
+    color: #0bc7ba;
+}
+.new-arriv-2 .new-arrivel #shopping-cart{
+    color: #0bc7ba;
+}
